@@ -60,4 +60,3 @@ def solveine(s:str,opr:str) -> str:
         else:  
             # 如果a为负，则解集为 x < x_value  
             return f"x < {x_value}"  
-print(solveine("-9x+(-10)>0",opr='>'))
