@@ -29,17 +29,17 @@ def suijiine(dif:int) -> str:
         s += suiji() + ")"
     s += choice(fuhao) + str(randint(0,100))
     return s
-def solveine(s:str,opr:str) -> str:
+def solveine(s:str) -> str:
     """
     Solves a linear inequality expression and returns the solution set.
     
     Args:
         s (str): The inequality expression as a string.
-        opr (str): The operator in the inequality expression.
     
     Returns:
         str: The solution set of the inequality expression.
     """
+    opr = ">"
     a = int((s.split(opr)[0]).split('+')[0][:-1])
     if "(" in s and ')' in s:
         b = int((s.split(opr)[0]).split('+')[1][1:-1])
