@@ -31,13 +31,14 @@ def suijiine(dif:int) -> str:
     return s
 def solveine(s:str,opr:str) -> str:
     """
-    Solves a given inequality expression.
-
+    Solves a linear inequality expression and returns the solution set.
+    
     Args:
-        s (str): The inequality expression to be solved.
-
+        s (str): The inequality expression as a string.
+        opr (str): The operator in the inequality expression.
+    
     Returns:
-        str: The solution to the inequality expression.
+        str: The solution set of the inequality expression.
     """
     a = int((s.split(opr)[0]).split('+')[0][:-1])
     if "(" in s and ')' in s:
